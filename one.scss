@@ -1,0 +1,71 @@
+$color: yellow;
+%message {
+    background-color: $color;
+    font-size: 20px;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+@media (max-width: 1000px) {
+    body {
+        background-color: $color;
+    }
+}
+#zeroid {
+    background-color: $color;
+    border: 5px solid black;
+    height: 200px;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    width: 200px;
+}
+.zeroclass {
+    font-family: helvetica;
+    font-size: 20px;
+    font-weight: bold;
+}
+#flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+.flex {
+    @extend %message;
+    border: 5px solid black;
+    width: 200px;
+}
+.grid {
+    @extend %message;
+}
+#grid {
+    background-color: black;
+    display: grid;
+    padding: 20px;
+    grid-column-gap: 20px;
+    grid-row-gap: 10px;
+    grid-template-columns: 200px 200px auto;
+    flex-wrap: wrap;
+}
+ul {
+    li {
+        color: red;
+    }
+}
+a {
+    color: black;
+}
+a[href="https://drive.google.com/file/d/1rHjukGjqaLWylP50CQ94mnsbYRy8m9KP/view?usp=sharing"] {
+    color: red;
+}
+button {
+    color: black;
+}
+button:hover {
+    color: red;
+}
+table,th,td {
+    border: 2px solid black;
+    border-collapse: collapse;
+    padding: 2px;
+}
