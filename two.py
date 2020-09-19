@@ -12,3 +12,7 @@ elif n < 0:
 else:
     print("n is zero")
 """
+myname="Tarush"
+names=["Harry","Ron","Hermione"]
+print(myname[1])
+print(names[1])
