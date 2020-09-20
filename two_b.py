@@ -1,4 +1,4 @@
-import two_a
+import two
 
 for i in range(6):
-    print(f"The square of {i} is {two_a.square(i)}.")
+    print(f"The square of {i} is {two.square(i)}.")
